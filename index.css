@@ -75,17 +75,18 @@ img {
 h1 {
     font-family: "Mountains of Christmas", cursive;
     text-align: center;
+    font-size: 1rem;
 }
 
 p {
     font-family: "Lato";
     text-align: center;
-    font-size: 0.7rem;
+    font-size: 0.5rem;
 }
 
 a {
     text-align: center;
-    font-size: 0.7rem;
+    font-size: 0.5rem;
     color: white;
     z-index: 1000;
 }
