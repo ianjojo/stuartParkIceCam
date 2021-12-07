@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700;800&family=Mountains+of+Christmas&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@700&family=Maven+Pro:wght@400;700;800&family=Mountains+of+Christmas&display=swap");
 body,
 html {
     overflow: hidden;
@@ -8,10 +9,18 @@ html {
     font-weight: 700;
     font-size: 30px;
     color: #fff;
-    background: #34a65f;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-underline-offset: 5px;
+}
+
+.icecam {
+    border-top: 7px solid white;
+    border-bottom: 7px solid white;
 }
 
 .color {
@@ -20,31 +29,39 @@ html {
     float: left;
 }
 
-.color p {
-    position: relative;
-    z-index: 1231231;
-    text-align: center;
-    line-height: 90vh;
+.title {
+    font-family: "Kanit";
+    font-size: 1.5rem;
+    padding: 0;
+    padding-top: 0.5rem;
+    margin: 0;
 }
 
-.color:nth-child(1) {
-    background-color: #f5624d;
+.bold {
+    font-family: "Maven Pro";
+    font-weight: 800;
 }
 
-.color:nth-child(2) {
-    background-color: #cc231e;
+.regular {
+    font-family: "Maven Pro";
+    font-weight: 400;
 }
 
-.color:nth-child(3) {
-    background-color: #34a65f;
+.subtitle {
+    font-family: "Maven Pro";
+    font-size: 1.5rem;
+    font-weight: 200;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 0.5rem;
 }
 
-.color:nth-child(4) {
-    background-color: #0f8a5f;
-}
-
-.color:nth-child(5) {
-    background-color: #235e6f;
+.blurb {
+    font-family: "Maven Pro";
+    font-size: 0.5rem;
+    font-weight: 200;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .sky {
@@ -79,16 +96,17 @@ h1 {
 }
 
 p {
-    font-family: "Lato";
-    text-align: center;
+    font-family: "Maven Pro";
+    font-weight: 200;
     font-size: 0.5rem;
+    margin: 0;
 }
 
 a {
-    text-align: center;
     font-size: 0.5rem;
     color: white;
     z-index: 1000;
+    text-decoration: none;
 }
 
 .link {
@@ -96,4 +114,89 @@ a {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.section1 {
+    // background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    // background-size: 400% 400%;
+    // animation: gradient 15s ease infinite;
+    height: 25vh;
+    margin-bottom: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section2 {
+    // background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    // background-size: 400% 400%;
+    // animation: gradient2 15s ease infinite;
+    display: flex;
+    height: 35vh;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    overflow: hidden;
+    top: 15%;
+    left: 40%;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 100% 50%;
+    }
+    50% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.refresh {
+    font-size: 0.35rem;
+}
+
+.left {
+    padding: 0.95rem;
+    width: 45%;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+    align-items: center;
+}
+
+.lg {
+    font-size: 0.6rem;
+}
+
+.refreshbtn {
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.ian {
+    text-decoration: none;
+}
+
+.line {
+    text-decoration: underline;
 }
