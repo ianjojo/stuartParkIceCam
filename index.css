@@ -33,7 +33,6 @@ html {
     font-family: "Kanit";
     font-size: 1.5rem;
     padding: 0;
-    padding-top: 0.5rem;
     margin: 0;
 }
 
@@ -49,11 +48,11 @@ html {
 
 .subtitle {
     font-family: "Maven Pro";
-    font-size: 1.5rem;
+    font-size: 1.15rem;
     font-weight: 200;
     padding: 0;
     margin: 0;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.15rem;
 }
 
 .blurb {
@@ -120,7 +119,7 @@ a {
     // background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     // background-size: 400% 400%;
     // animation: gradient 15s ease infinite;
-    height: 25vh;
+    height: 20vh;
     margin-bottom: 0.3rem;
     display: flex;
     flex-direction: column;
